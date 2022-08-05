@@ -1,0 +1,46 @@
+<meta charset="UTF-8" />
+IMC
+<br>
+
+<script>
+    function saltarLinea() {
+      document.write("<br>");
+      document.write("<br>");
+    }
+  
+    function imprimir(frase) {
+      document.write(frase);
+      saltarLinea();
+    }
+
+    /*function calcularImc(peso, altura){
+      imc = peso / (altura * altura);
+      return(imc);
+    }
+     pesoCristian = 71
+     alturaCristian = 1.72
+    //imcCristian = pesoCristian / (alturaCristian * alturaCristian)
+    imcCristian = calcularImc(pesoCristian, alturaCristian)
+    imprimir("El IMC de Cristian es de: "+imcCristian)
+
+  //otra manera 
+
+     pesoFelipe = 75
+     alturaFelipe =1.73
+     imcFelipe = pesoFelipe / (alturaFelipe * alturaFelipe)
+
+    imprimir("El IMC de Felipe es de: "+imcFelipe)*/
+    
+    
+
+    function calcularImc(peso, altura, nombre){
+      imc = peso / (altura * altura);
+      imprimir("El IMC calculado de " + nombre + " es :" +imc);
+    }
+     
+    
+    calcularImc(71,1.72, "Cristian")
+    
+    calcularImc(75,1.73, "Felipe")
+    
+  </script>
